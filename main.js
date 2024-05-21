@@ -37,6 +37,9 @@ signupBtn.onclick = function() {
 
             accountEmails.push(signupEmail.value);
             accountPasswords.push(signupPassword.value);
+
+            signupFormContainer.style.display = 'none';
+            loginFormContainer.style.display = 'flex';
         
             alert("Account created successfully!");
 
@@ -58,9 +61,16 @@ signupBtn.onclick = function() {
 loginBtn.onclick = function() {
 
     if (accountEmails.includes(loginEmail.value) && accountPasswords.includes(loginPassword.value)) {
+
+        username.textContent = loginEmail.value;
+        heroname.textContent = loginEmail.value;
+
+
+
         alert("Login Successful!");
-        loginFormContainer.hide();
-        mainHero.show(500);
+
+        loginFormContainer.style.display = 'none';
+        mainHero.style.display = 'flex';
     }
     else {
         alert("Wrong details. Please try again.")

@@ -11,6 +11,24 @@
 .main-hero {
     display: none;
     justify-content: space-between;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 48%, rgba(57,65,66,1) 100%);
+    color: white;
+}
+
+.main-hero button {
+    color: white;
+    border-color: white;
+
+    background: rgba(38,38,38,1) 48%;
+    padding: .60rem;
+    width: 5rem;
+
+    transition: 0.5s;
+}
+
+.main-hero button:hover {
+
+    width: 6rem;
 }
 
 .side-nav {
@@ -23,7 +41,7 @@
 }
 
 .side-nav a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -32,7 +50,6 @@
 }
 
 .username {
-    text-align: left;
 
     margin-bottom: 6rem;
 }
@@ -46,8 +63,19 @@
 }
 
 #signout {
-    padding: .40rem;
+    color: white;
+    border-color: white;
+
+    background: rgba(38,38,38,1) 48%;
+    padding: .60rem;
     width: 5rem;
+
+    transition: .5s;
+}
+#signout:hover {
+
+    padding: .80rem;
+    width: 5.5rem;
 }
 
 .hero-content {
